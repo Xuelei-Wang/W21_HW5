@@ -151,7 +151,8 @@ class TestCard(unittest.TestCase):
         q7.replace_card(replaced_card)
         current_length = len(q7.cards)
         self.assertEqual((original_length, reduced_length,current_length), (52, 51, 52))
-        return original_length, reduced_length, current_length
+        self.assertEqual(replaced_card, q7.cards[-1])
+        return original_length, reduced_length, current_length, replaced_card, q7.cards[-1]
     
     def test_q8(self):
         '''
