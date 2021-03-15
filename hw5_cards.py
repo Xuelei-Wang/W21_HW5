@@ -148,7 +148,3 @@ def print_hand(hand):
         hand_str += r + "of" + s + ' / '
     print(hand_str)
 
-
-q5 = Deck()
-print(q5.deal_card())
-print(type(q5.deal_card()))
